@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "My Note",
+  "version": "0.01",
+  "description": "Notes when you want to note something down quickly",
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "newtab.html",
+    "default_title": "Add notes here"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["activeTab", "clipboardWrite"],
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'"
+}
