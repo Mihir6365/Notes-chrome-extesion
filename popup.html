@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>new tab</title>
 </head>
 
-<body>
-    <button onclick="openapp()">click me</button>
-</body>
-<script src="background.js"></script>
+<body class="dark" style="min-width: 500px; max-height: 500px;">
+    <div class="main">
+        <aside class="sidebar hidden">
+            <div class="icon">✒️</div>
+            <h1>New Tab Notes</h1>
+            <div class="pages-holder"></div>
+        </aside>
 
-</html>
+        <section class=" holder">
+            <div class="icon">📃</div>
+            <div class="buttons">
+                <div class="newNote">➕ New Note</div>
+                <button class="savePage">Save</button>
+                <button class="deletePage">Delete</button>
+            </div>
+
+            <h1 contenteditable="true" placeholder="Untitled"></h1>
+            <div class="post-body" contenteditable="true" placeholder="Write your post here..."></div>
+        </section>
+        <i class="fa fa-expand" aria-hidden="true" id="expansion_btn"></i>
+    </div>
+    <script src="app.js"></script>
+    <script src="mainscr.js"></script>
+</body>

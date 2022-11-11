@@ -1,4 +1,5 @@
 ///App.js
+
 window.firstOpen = false;
 function fetchNotes() {
   //Fetch notes form database
@@ -60,6 +61,7 @@ function savePage(id, title, icon, body) {
 document.querySelector('.newNote').addEventListener('click', function () {
   clearNote();
 });
+
 document.querySelector('.deletePage').addEventListener('click', function () {
   var id = false;
   try {

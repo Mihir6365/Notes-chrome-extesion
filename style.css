@@ -71,7 +71,8 @@ ul li {
   cursor: pointer;
   padding-left: 5px;
 }
-.newNote:hover,
+.hoverable:hover,
+#expansion_btn:hover,
 ul li.active,
 ul li:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -100,7 +101,7 @@ ul li:hover {
 }
 
 .buttons {
-  position: absolute;
+  position: fixed;
   bottom: 5%;
   right: 5%;
 }
@@ -110,4 +111,11 @@ ul li:hover {
 .post-body {
   min-height: 100px;
   width: 100%;
+}
+#expansion_btn {
+  position: fixed;
+  cursor: pointer;
+  padding: 20px;
+  bottom: 3vw;
+  left: 3vw;
 }
